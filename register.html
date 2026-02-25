@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kathiravan Group | User registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <div class="top-actions">
+        <button class="role-btn active">User Login</button>
+        <a href="login_admin.html" class="role-btn">Admin Login</a>
+    </div>
+
+
+    <div class="login-card">
+
+        <div class="image-section">
+            <img src="Images/registration.jpeg" alt="Hospital Illustration">
+        </div>
+
+        <div class="container">
+
+            <form onsubmit="return validateForm();">
+
+                <div class="brand">
+                    <h2>Kathiravan Group</h2>
+                    <p>Hospital Management System</p>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" id="firstName" placeholder="First name">
+                        <span id="firstNameError"></span>
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" id="lastName" placeholder="Last name">
+                        <span id="lastNameError"></span>
+                    </div>
+                </div>
+
+                <div class="gender">
+                    <label>Gender</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                        <label><input type="radio" name="gender" value="Other"> Other</label>
+                    </div>
+                    <span id="genderError"></span>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label>Age</label>
+                        <input type="number" id="age" placeholder="Age">
+                        <span id="ageError"></span>
+                    </div>
+                    <div>
+                        <label>Date of Birth</label>
+                        <input type="date" id="dob">
+                        <span id="dobError"></span>
+                    </div>
+                </div>
+
+                <label>Blood Group</label>
+                <select id="bloodGroup">
+                    <option value="">Select blood group</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                </select>
+                <span id="bloodGroupError"></span>
+
+                <label>Address</label>
+                <textarea id="address" rows="3" placeholder="House No, Street, City, State, Pincode"></textarea>
+                <span id="addressError"></span>
+
+                <label>Email ID</label>
+                <input type="email" id="email" placeholder="example@mail.com">
+                <span id="emailError"></span>
+
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="10-digit mobile number">
+                <span id="phoneError"></span>
+
+                <label>Username</label>
+                <input type="text" id="username" placeholder="username">
+                <span id="usernameError"></span>
+
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <span id="passwordError"></span>
+
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Re-enter password">
+                <span id="confirmPasswordError"></span>
+
+                <label>Emergency Contact Number</label>
+                <input type="tel" id="emergencyPhone" placeholder="Emergency contact number">
+                <span id="emergencyPhoneError"></span>
+
+                <div style="height:15px;"></div>
+
+                <div class="row">
+                    <button type="submit">Register</button>
+                    <button type="reset">Clear</button>
+                </div>
+
+                <div class="link">
+                    <a href="login_user.html"style="font-weight: bold;">Already registered? Login</a>
+                </div>
+
+                <div class="footer">
+                    © 2026 Kathiravan Group. All rights reserved.
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

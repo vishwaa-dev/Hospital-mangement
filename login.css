@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    position: relative;
+    background-image: url(Images/Background.png); 
+    background-size: cover;      /* fills entire screen */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ===========================
+   TOP RIGHT LOGIN TYPE BUTTONS
+   =========================== */
+.top-actions {
+    position: absolute;
+    top: 24px;
+    right: 40px;
+    display: flex;
+    gap: 12px;
+}
+
+.role-btn {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 24px;
+    border: 1px solid #b6d7dd;
+    background: transparent;
+    color: #82f0ff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.role-btn:hover {
+    background: #e6f4f7;
+    border-color: #0097a7;
+    color:#0097a7;
+}
+
+.role-btn.active {
+    background: #0097a7;
+    color: #ffffff;
+    border-color: #0097a7;
+    box-shadow: 0 4px 10px rgba(0, 151, 167, 0.25);
+}
+
+/* ===========================
+   CENTER LOGIN CARD
+   =========================== */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Left Image */
+.image-section {
+    width: 50%;
+    background: #e8f4fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Right Form */
+.form-section {
+    width: 50%;
+    padding: 50px 60px;
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #0b3c91;
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #5c7a89;
+    margin-bottom: 30px;
+}
+
+.form-section label {
+    display: block;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5db;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.form-section input:focus {
+    outline: none;
+    border-color: #0097a7;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    border: none;
+    background: #0097a7;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #007c8a;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 12px;
+    color: #7a8c96;
+    margin-top: 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    font-size: 13px;
+}
+
+.links a {
+    color: #1f4e79;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Small text above create button */
+.new-text {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 12px; 
+    font-size: 14px;
+    color: #666;
+}
+
+/* Create Account Button */
+.create-account-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 10px; 
+    border: 2px solid #2c7be5;
+    background-color: white;
+    color: #2c7be5;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.create-account-btn:hover {
+    background-color: #2c7be5;
+    color: white;
+}
